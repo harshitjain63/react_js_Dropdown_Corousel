@@ -1,38 +1,91 @@
-.App {
+.app-container {
   text-align: center;
+  padding: 70px;
+  margin: auto;
+  background: skyblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  margin-bottom: 10px;
+  background-color: pink;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  font-size: 52px;
+  color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header p {
+  font-size: 20px;
+  color: blueviolet;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: orange;
+  border-top: black;
+}
+
+.footer p {
+  font-size: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown {
+  width: 400px;
+  margin: 0 auto;
+  user-select: none;
+  border-width: 5px;
+  border-radius: 10px; /* Curved border */
+  border-color: skyblue;
+  border-style: solid; /* Add border style */
+  position: relative; /* To position dropdown content */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown .dropdown-btn {
+  padding: 15px 20px;
+  background: white;
+  box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.60);
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px; /* Curved border for button */
+}
+
+.dropdown .dropdown-content {
+  position: absolute;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.60);
+  font-weight: 500;
+  color: #333;
+  border-radius: 10px; 
+  left: 0; 
+  width: 100%; 
+  top: 100%; 
+  z-index: 1000; 
+  top: 110%;
+}
+
+.dropdown .dropdown-content .dropdown-item {
+  padding: 10px; 
+  border-bottom: 1px solid #ddd; 
+  margin-bottom: 5px; 
+}
+
+.dropdown .dropdown-content .dropdown-item:hover {
+  background: #f4f4f4;
+}
+
+.dropdown .dropdown-content .dropdown-item:last-child {
+  margin-bottom: 0; 
 }
